@@ -1,0 +1,11 @@
+server:
+  port: 8881
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/king019/spring-cloud-config-repository.git
+#          basedir: ./config-local-server

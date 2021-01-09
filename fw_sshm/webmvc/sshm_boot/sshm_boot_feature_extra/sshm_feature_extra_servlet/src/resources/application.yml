@@ -1,0 +1,3 @@
+#NacosDiscoveryProperties
+server:
+  port: 8822

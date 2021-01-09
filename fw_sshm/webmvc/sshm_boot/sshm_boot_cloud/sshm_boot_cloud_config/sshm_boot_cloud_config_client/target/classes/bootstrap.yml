@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      name: spring-cloud-config-client
+      profile: dev
+      uri: http://local:8881
+      label: master
+      force-pull: true

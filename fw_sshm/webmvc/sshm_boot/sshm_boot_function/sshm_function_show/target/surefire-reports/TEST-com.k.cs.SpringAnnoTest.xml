@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.k.cs.SpringAnnoTest" time="2.351" errors="0" skipped="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/zk/0zy7g7vs3td8tjmy94vz54fm0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/k/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.16"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.0/libexec/lib/jansi-native"/>
+    <property name="user.home" value="/Users/k"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="k"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.0/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.k.cs.SpringAnnoTest" name="test" time="2.351">
+    <skipped/>
+    <system-out>21-01-09 09:54:16,721 [,,] [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner(SpringJUnit4ClassRunner.java:139) ## SpringJUnit4ClassRunner constructor called with [class com.k.cs.SpringAnnoTest]
+21-01-09 09:54:16,733 [,,] [main] DEBUG o.s.t.c.BootstrapUtils(BootstrapUtils.java:96) ## Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21-01-09 09:54:16,749 [,,] [main] DEBUG o.s.t.c.BootstrapUtils(BootstrapUtils.java:79) ## Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21-01-09 09:54:16,833 [,,] [main] DEBUG o.s.t.c.BootstrapUtils(BootstrapUtils.java:132) ## Instantiating TestContextBootstrapper for test class [com.k.cs.SpringAnnoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+21-01-09 09:54:16,942 [,,] [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader(AbstractDelegatingSmartContextLoader.java:263) ## Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@765f05af declaringClass = &apos;com.k.cs.SpringAnnoTest&apos;, classes = &apos;{class com.k.spring.boot.control.BootControl}&apos;, locations = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+21-01-09 09:54:17,196 [,,] [main] DEBUG o.s.t.c.s.ActiveProfilesUtils(ActiveProfilesUtils.java:79) ## Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,197 [,,] [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper(AbstractTestContextBootstrapper.java:125) ## @TestExecutionListeners is not present for class [com.k.cs.SpringAnnoTest]: using defaults.
+21-01-09 09:54:17,198 [,,] [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper(AbstractTestContextBootstrapper.java:248) ## Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+21-01-09 09:54:17,222 [,,] [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper(AbstractTestContextBootstrapper.java:192) ## Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+21-01-09 09:54:17,223 [,,] [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper(AbstractTestContextBootstrapper.java:192) ## Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21-01-09 09:54:17,224 [,,] [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper(AbstractTestContextBootstrapper.java:177) ## Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@485a3466, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@25748410, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b43529a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4264b240, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b04476e, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ad10c1a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6bb75258, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@c260bdc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75e01201, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2783717b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@76f7d241, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4a335fa8]
+21-01-09 09:54:17,232 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:70) ## Retrieved @ProfileValueSourceConfiguration [null] for test class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,234 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:83) ## Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,245 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:70) ## Retrieved @ProfileValueSourceConfiguration [null] for test class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,247 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:83) ## Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,249 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:70) ## Retrieved @ProfileValueSourceConfiguration [null] for test class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,250 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:83) ## Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,252 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:70) ## Retrieved @ProfileValueSourceConfiguration [null] for test class [com.k.cs.SpringAnnoTest]
+21-01-09 09:54:17,268 [,,] [main] DEBUG o.s.t.a.ProfileValueUtils(ProfileValueUtils.java:83) ## Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.k.cs.SpringAnnoTest]
+</system-out>
+  </testcase>
+</testsuite>

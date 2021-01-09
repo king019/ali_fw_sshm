@@ -1,0 +1,6 @@
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webdep/sshm_boot_cloud_grpc_client/src/main/java/com/k/sshm/grpc/server/proto/HelloWorldProto.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webdep/sshm_boot_cloud_grpc_client/src/main/java/com/k/sshm/grpc/server/proto/HelloReply.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webdep/sshm_boot_cloud_grpc_client/src/main/java/com/k/sshm/grpc/server/proto/HelloReplyOrBuilder.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webdep/sshm_boot_cloud_grpc_client/src/main/java/com/k/sshm/grpc/server/proto/SimpleGrpc.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webdep/sshm_boot_cloud_grpc_client/src/main/java/com/k/sshm/grpc/server/proto/HelloRequest.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webdep/sshm_boot_cloud_grpc_client/src/main/java/com/k/sshm/grpc/server/proto/HelloRequestOrBuilder.java

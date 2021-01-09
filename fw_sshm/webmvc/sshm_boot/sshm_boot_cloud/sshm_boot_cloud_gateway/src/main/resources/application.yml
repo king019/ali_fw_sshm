@@ -1,0 +1,16 @@
+server:
+  port: 8805
+spring:
+  application:
+    name: cloud_gateway
+  cloud:
+    gateway:
+      routes:
+        - id: method_route
+          uri: https://www.baidu.com
+          predicates:
+            - Method=GET,POST
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${register.center.host}:${register.center.port}/eureka

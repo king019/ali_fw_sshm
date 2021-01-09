@@ -1,0 +1,10 @@
+com/k/spring/boot/anno/factory/SpringBeanFactoryAnno.class
+com/k/spring/boot/anno/util/vo/SpringEntityAnno.class
+com/k/spring/boot/xml/service/SpringServiceXml.class
+com/k/spring/main/ControlAnnlTest.class
+com/k/spring/boot/anno/service/SpringServiceAnno.class
+com/k/spring/boot/xml/util/vo/SpringEntityXml.class
+com/k/spring/main/ControlXmlTest.class
+com/k/spring/boot/xml/factory/SpringBeanFactoryXml.class
+com/k/spring/boot/anno/thread/SpringThread$TaskRun.class
+com/k/spring/boot/anno/thread/SpringThread.class

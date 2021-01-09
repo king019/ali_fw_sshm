@@ -1,0 +1,4 @@
+com/k/sshm/grpc/client/client/SimpleGrpcService.class
+com/k/sshm/grpc/client/SshmGrpcClientClient.class
+com/k/sshm/grpc/client/client/GrpcClientService.class
+com/k/sshm/grpc/client/controller/HelloControl.class

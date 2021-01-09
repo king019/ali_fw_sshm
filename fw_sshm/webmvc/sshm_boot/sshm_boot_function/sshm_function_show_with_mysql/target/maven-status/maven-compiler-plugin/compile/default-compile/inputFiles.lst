@@ -1,0 +1,14 @@
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/util/mybatis/MyBatisConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/inf/ZebraConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/mybatis/dao/TbMapper.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/ControlWithMysqlRuner.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/service/impl/BootServiceImpl.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/dao/BootDao.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/swigger/SwiggerConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/mybatis/dto/Tb.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/mybatis/dto/TbExample.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/dao/impl/BootDaoImpl.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/util/db/sql/DataBaseConfiguration.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/control/BootControl.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/service/BootService.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_boot/sshm_boot_function/sshm_function_show_with_mysql/src/main/java/com/k/spring/boot/mybatis/dao/TbSqlMapper.java

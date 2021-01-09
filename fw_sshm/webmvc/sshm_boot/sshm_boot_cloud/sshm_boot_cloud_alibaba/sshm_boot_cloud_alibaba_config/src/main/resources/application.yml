@@ -1,0 +1,13 @@
+#NacosDiscoveryProperties
+server:
+  port: 8904
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: smp:8848
+      config:
+        serverAddr: smp:8848
+        name: cg

@@ -1,0 +1,9 @@
+server:
+  port: 8882
+spring:
+  application:
+    name: feignClient
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${register.center.host}:${register.center.port}/eureka

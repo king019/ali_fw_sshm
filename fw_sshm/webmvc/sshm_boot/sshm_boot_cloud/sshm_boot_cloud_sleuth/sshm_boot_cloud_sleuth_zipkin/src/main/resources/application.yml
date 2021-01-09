@@ -1,0 +1,9 @@
+server:
+  port: 8807
+spring:
+  application:
+    name: sleuth_zipkin
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${register.center.host}:${register.center.port}/eureka

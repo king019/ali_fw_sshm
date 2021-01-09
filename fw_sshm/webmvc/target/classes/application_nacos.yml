@@ -1,0 +1,14 @@
+server:
+  port: 8882
+spring:
+  application:
+    name: feign-consumer
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+  sentinel:
+    enabled: true
+    transport:
+      #port: 8900
+      dashboard: sentinel:9930

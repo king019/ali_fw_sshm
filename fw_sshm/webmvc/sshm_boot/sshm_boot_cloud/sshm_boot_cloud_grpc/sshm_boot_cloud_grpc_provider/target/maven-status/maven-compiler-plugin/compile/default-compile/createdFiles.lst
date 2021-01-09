@@ -1,0 +1,3 @@
+com/k/sshm/grpc/server/controller/HelloControl.class
+com/k/sshm/grpc/server/SshmGrpcServerProvider.class
+com/k/sshm/grpc/server/server/GrpcServerService.class

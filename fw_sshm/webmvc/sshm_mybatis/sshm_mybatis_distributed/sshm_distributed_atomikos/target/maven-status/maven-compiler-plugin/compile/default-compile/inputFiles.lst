@@ -1,0 +1,14 @@
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/entity/Test2.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/config/DataSourceConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/service/Test1Service.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/config/RepositoryPrimaryConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/service/Test2Service.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/JtaApplicationRun.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/config/DataBaseConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/web/HelloController.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/config/JtaTransactionManagerConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/entity/Test1.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/config/RepositorySecondaryConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/repository/secondary/Test2Dao.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/config/DruidConfig.java
+/Users/k/soft/version/aliyun/ali_fw_sshm/fw_sshm/webmvc/sshm_mybatis/sshm_mybatis_distributed/sshm_distributed_atomikos/src/main/java/com/k/atomikos/repository/primary/Test1Dao.java

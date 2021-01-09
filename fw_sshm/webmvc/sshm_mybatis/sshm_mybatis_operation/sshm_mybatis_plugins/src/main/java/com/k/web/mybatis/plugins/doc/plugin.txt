@@ -1,0 +1,37 @@
+plugins
+MyBatis 允许你在某一点拦截已映射语句执行的调用。默认情况下,MyBatis 允许使用 插件来拦截方法调用:
+
+Executor (update, query, flushStatements, commit, rollback, getTransaction, close, isClosed)
+ParameterHandler (getParameterObject, setParameters)
+ResultSetHandler (handleResultSets, handleOutputParameters)
+StatementHandler (prepare, parameterize, batch, update, query)
+这些类中方法的详情可以通过查看每个方法的签名来发现 ,而且它们的源代码在 MyBatis 的发行包中有。你应该理解你覆盖方法的行为,假设你所做的要比监视调用要多。 如果你尝试修改或覆盖一个给定的方法, 你可能会打破 MyBatis 的核心。 这是低层次的类和 方法,要谨慎使用插件。
+
+使用插件是它们提供的非常简单的力量。 简单实现拦截器接口, 要确定你想拦截的指定 签名。
+
+// ExamplePlugin.java
+@Intercepts({@Signature(
+  type= Executor.class,
+  method = "update",
+  args = {MappedStatement.class,Object.class})})
+public class ExamplePlugin implements Interceptor {
+  public Object intercept(Invocation invocation) throws Throwable {
+    return invocation.proceed();
+  }
+  public Object plugin(Object target) {
+    return Plugin.wrap(target, this);
+  }
+  public void setProperties(Properties properties) {
+  }
+}
+<!-- mybatis-config.xml -->
+<plugins>
+  <plugin interceptor="org.mybatis.example.ExamplePlugin">
+    <property name="someProperty" value="100"/>
+  </plugin>
+</plugins>
+上面的插件将会拦截在 Executor 实例中所有的“update”方法调用,它也是负责低层次 映射语句执行的内部对象。
+
+NOTE 覆盖配置类
+
+除了用插件来修改 MyBatis 核心行为之外, 你也可以完全覆盖配置类。 简单扩展它, 然后覆盖其中的任意方法,之后传递它到 sqlSessionFactoryBuilder.build(myConfig)方法 的调用。这可能会严重影响 MyBatis 的行为,所以要小心。

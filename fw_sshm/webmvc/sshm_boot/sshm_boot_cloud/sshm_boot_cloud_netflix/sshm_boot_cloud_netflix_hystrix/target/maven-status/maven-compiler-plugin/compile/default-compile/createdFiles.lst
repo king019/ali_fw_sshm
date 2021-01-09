@@ -1,0 +1,4 @@
+com/k/sshm/boot/cloud/netfix/hystrix/service/HystrixService.class
+com/k/sshm/boot/cloud/netfix/hystrix/control/HelloControl.class
+com/k/sshm/boot/cloud/netfix/hystrix/SshmHystrixClient.class
+com/k/sshm/boot/cloud/netfix/hystrix/config/BeanConfig.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:task="http://www.springframework.org/schema/task" xmlns="http://www.springframework.org/schema/beans"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/task
+        http://www.springframework.org/schema/task/spring-task.xsd
+        ">
+  <aop:aspectj-autoproxy/>
+  <task:executor id="executor1" rejection-policy="DISCARD_OLDEST"></task:executor>
+  <task:executor id="executor2" keep-alive="0" pool-size="10" queue-capacity="40" rejection-policy="DISCARD_OLDEST"/>
+  <task:annotation-driven executor="executor2"/>
+</beans>
