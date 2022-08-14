@@ -1,0 +1,8 @@
+server:
+  port: 443
+  ssl:
+    key-store: /opt/soft/docker/https/server.keystore
+    key-alias:  tomcat
+    enabled:  true
+    key-store-password: 111111
+    key-store-type: JKS

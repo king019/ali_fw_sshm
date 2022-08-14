@@ -1,0 +1,14 @@
+#NacosDiscoveryProperties
+server:
+  port: 8981
+spring:
+  application:
+    name: admin-consumer
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+  boot:
+    admin:
+      client:
+        url: http://admin:8980

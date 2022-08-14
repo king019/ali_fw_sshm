@@ -1,0 +1,2 @@
+env:
+  JAVA_OPTS: "-Xdebug -Xrunjdwp:server=y,transport=dt_socket,suspend=n"

@@ -1,0 +1,9 @@
+server:
+  port: 8807
+spring:
+  application:
+    name: sleuth_zipkin
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848

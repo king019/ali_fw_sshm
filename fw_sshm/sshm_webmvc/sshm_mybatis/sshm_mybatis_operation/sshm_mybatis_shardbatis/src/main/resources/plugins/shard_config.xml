@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shardingConfig PUBLIC "-//shardbatis.googlecode.com//DTD Shardbatis 2.0//EN"
+        "http://shardbatis.googlecode.com/dtd/shardbatis-config.dtd">
+<shardingConfig>
+    <!-- 配置分表策略 -->
+    <strategy tableName="mybatis" strategyClass="com.k.web.mybatis.plugins.shardstrategy.TestShardStrategyImpl"/>
+</shardingConfig>

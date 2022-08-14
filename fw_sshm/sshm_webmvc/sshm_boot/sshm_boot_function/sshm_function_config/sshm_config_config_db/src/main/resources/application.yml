@@ -1,0 +1,44 @@
+spring:
+  aop:
+    auto: false
+    proxy-target-class: true
+  datasource:
+    url: 'jdbc:mysql://mysql:3306/test'
+    username: 'root'
+    password: '111111'
+    driver-class-name: 'com.mysql.cj.jdbc.Driver'
+
+server:
+  port: 8081
+my:
+  servers:
+    - dev.bar.com
+    - foo.bar.com
+#my.servers[0]=dev.bar.com
+#my.servers[1]=foo.bar.com
+
+environments:
+  dev:
+    url: http://dev.bar.com
+    name: Developer Setup
+  prod:
+    url: http://foo.bar.com
+    name: My Cool App
+  product: pud
+#environments.dev.url=http://dev.bar.com
+#environments.dev.name=Developer Setup
+#environments.prod.url=http://foo.bar.com
+#environments.prod.name=My Cool App
+
+#spring.ldap.urls=ldap://127.0.0.1:12345
+#spring.ldap.username=admin
+#spring.ldap.password=admin
+cfgvo:
+  id: 2
+  name: "123"
+
+
+#spring.datasource.url=jdbc:mysql://mysql:3306/test
+#spring.datasource.username=root
+#spring.datasource.password=111111
+#spring.datasource.driver=com.mysql.jdbc.Driver

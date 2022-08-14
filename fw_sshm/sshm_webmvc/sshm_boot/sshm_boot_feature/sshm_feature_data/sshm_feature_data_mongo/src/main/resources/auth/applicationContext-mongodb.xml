@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd  
+       http://www.springframework.org/schema/data/mongo 
+		http://www.springframework.org/schema/data/mongo/spring-mongo.xsd 
+		  http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd   
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd 
+          " default-autowire="byName">
+    <context:property-placeholder location="classpath:mongo.properties"/>
+    <!--    <mongo:mongo id="mc" replica-set="${mongo.replica-set}">-->
+    <!--        <mongo:options connections-per-host="${mongo.connections-per-host}"-->
+    <!--                       threads-allowed-to-block-for-connection-multiplier="${mongo.threads-allowed-to-block-for-connection-multiplier}"-->
+    <!--                       connect-timeout="${mongo.connect-timeout}" auto-connect-retry="${mongo.auto-connect-retry}"-->
+    <!--                       socket-keep-alive="${mongo.socket-keep-alive}" socket-timeout="${mongo.socket-timeout}"-->
+    <!--                       slave-ok="${mongo.slave-ok}" write-number="${mongo.write-number}"-->
+    <!--                       write-timeout="${mongo.write-timeout}" write-fsync="${mongo.write-fsync}"/>-->
+    <!--    </mongo:mongo>-->
+    <mongo:mongo id="mc" host="${mongo.ip}" port="${mongo.port}"/>
+
+    <mongo:db-factory id="mongoDbFactory" dbname="${mongo.dbname}" mongo-ref="mc"
+                      authentication-dbname="${mongo.authentication-dbname}" username="${mongo.username}"
+                      password="${mongo.password}"/>
+    <!-- <bean -->
+    <!-- id="mongoTemplate" -->
+    <!-- class="org.springframework.data.mongodb.core.MongoTemplate" > -->
+    <!-- <constructor-arg -->
+    <!-- name="mongoDbFactory" -->
+    <!-- ref="mongoDbFactory" /> -->
+    <!-- </bean> -->
+    <mongo:template id="mongoTemplate" db-factory-ref="mongoDbFactory"/>
+    <!-- <mongo:template -->
+    <!-- id="mongoTemplate" -->
+    <!-- db-factory-ref="mongoDbFactory" converter-ref="convert" > -->
+    <!-- </mongo:template> -->
+    <!-- <mongo:mapping-converter id="convert" base-package="com.k.mongo.vo" /> -->
+    <!-- <mongo:repositories base-package="com.k.mongo.reposit" /> -->
+    <context:annotation-config/>
+    <context:component-scan base-package="com.k"/>
+    <aop:aspectj-autoproxy/>
+</beans>

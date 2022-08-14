@@ -1,0 +1,4 @@
+boot:
+  start:
+    java:
+      order: 1

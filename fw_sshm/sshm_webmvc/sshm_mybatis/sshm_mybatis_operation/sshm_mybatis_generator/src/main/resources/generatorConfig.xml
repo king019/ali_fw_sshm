@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+
+<generatorConfiguration>
+    <classPathEntry
+            location="/Users/k/soft/maven/maven_libs/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15.jar"/>
+    <context id="mysql" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.CachePlugin">
+            <property name="cache_size" value="10"/>
+        </plugin>
+        <!-- 注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="false"/>
+            <!-- 是否取消注释 -->
+            <property name="suppressDate" value="false"/>
+            <!-- 是否取消注释 -->
+            <property name="addRemarkComments" value="false"/>
+            <!-- 是否生成注释代时间戳 -->
+            <property name="dateFormat" value="yyyy-MM-dd HH:mm:ss"/>
+        </commentGenerator>
+
+        <!-- jdbc -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/test" userId="root"
+                        password="111111"/>
+
+        <!-- 生成model -->
+        <javaModelGenerator targetPackage="mybatis.dto"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成sql -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 生成sql client -->
+        <javaClientGenerator targetPackage="mybatis.dao"
+                             targetProject="src/main/java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--增加新表时，不要删除原来的表配置，注释掉即可 -->
+        <table schema="test" tableName="mybatis_table_1">
+            <property name="useActualColumnNames" value="false"/>
+            <generatedKey column="id1" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table schema="test" tableName="mybatis_table_2">
+            <property name="useActualColumnNames" value="false"/>
+            <property name="useColumnIndexes" value="true"/>
+            <property name="domainObjectName" value="spk"/>
+
+
+            <property name="enableInsert" value="false"/>
+            <property name="enableSelectByPrimaryKey" value="false"/>
+            <property name="enableSelectByExample" value="false"/>
+            <property name="enableDeleteByPrimaryKey" value="false"/>
+            <property name="enableDeleteByExample" value="false"/>
+            <property name="enableCountByExample" value="false"/>
+            <property name="enableUpdateByExample" value="false"/>
+            <property name="selectByPrimaryKeyQueryId" value="false"/>
+            <property name="selectByExampleQueryId" value="false"/>
+
+
+            <generatedKey column="id2" sqlStatement="MySql" identity="true"/>
+        </table>
+
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,8 @@
+server:
+  port: 8882
+app:
+  id: config_client
+apollo:
+  meta: http://apollo:6121
+  bootstrap:
+    enabled: true

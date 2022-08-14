@@ -1,0 +1,10 @@
+#NacosDiscoveryProperties
+server:
+  port: 8904
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.k.web.mybatis.dao.ExamLogDao">
+    <insert id="intertObj" parameterType="examLog">
+        <selectKey keyProperty="logId" order="BEFORE" resultType="int">select seq_cs_exam_log.nextval
+            from dual
+        </selectKey>
+        insert into cs_examination_log (log_id, exam_id, log_time, log_agent, log_type) values (#{ logId},
+        #{ examId}, sysdate, #{ logAgent}, #{ logType})
+    </insert>
+    <select id="queryObjOne" parameterType="examLog" resultType="examLog">
+        select t.log_id logId, t.exam_id examId, t.log_type logType, t.log_agent logAgent from
+        cs_examination_log t
+        <where>
+            <if test="logId!=null">t.log_id =#{logId}</if>
+        </where>
+    </select>
+    <select id="queryObjList" parameterType="examLog" resultType="examLog">select t.log_id logId,
+        t.exam_id examId, t.log_type logType, t.log_agent logAgent from cs_examination_log t
+    </select>
+
+    <update id="updateObj" parameterType="examLog">update cs_examination_log t set t.log_agent=#{logAgent}
+        where t.log_id =#{logId}
+    </update>
+    <delete id="deleteObj" parameterType="examLog">delete cs_examination_log t where t.log_id =#{logId}
+    </delete>
+</mapper>

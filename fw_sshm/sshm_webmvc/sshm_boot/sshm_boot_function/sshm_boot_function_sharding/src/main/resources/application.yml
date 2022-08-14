@@ -1,0 +1,13 @@
+mybatis:
+  ds0:
+    url: 'jdbc:mysql://mysql:3306/ds0'
+    username: 'root'
+    password: '111111'
+    driverClassName: 'com.mysql.cj.jdbc.Driver'
+  ds1:
+    url: 'jdbc:mysql://mysql:3306/ds1'
+    username: 'root'
+    password: '111111'
+    driverClassName: 'com.mysql.cj.jdbc.Driver'
+server:
+  port: 8899

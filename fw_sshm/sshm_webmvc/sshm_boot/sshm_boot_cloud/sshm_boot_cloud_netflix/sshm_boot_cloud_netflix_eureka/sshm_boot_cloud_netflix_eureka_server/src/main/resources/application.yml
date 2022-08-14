@@ -1,0 +1,17 @@
+server:
+  port: 8701
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    #    serviceUrl:
+    #      defaultZone : http://${eureka.instance.hostname}:${server.port}/eureka
+    region: region1
+    availabilityZones:
+      region1: zone1,zone2
+    serviceUrl:
+      zone1: http://${eureka.instance.hostname}:${server.port}/eureka
+      zone2: http://${eureka.instance.hostname}:${server.port}/eureka

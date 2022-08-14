@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sshm_boot_cloud</artifactId>
+        <groupId>com.k.sshm</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sshm_boot_cloud_netflix</artifactId>
+    <packaging>pom</packaging>
+    <properties>
+        <!--        2.4.2 2.3.7.RELEASE-->
+        <!--        <spring-boot-dependencies.version>2.3.7.RELEASE</spring-boot-dependencies.version>-->
+        <!--        2020.0.1 Hoxton.SR9-->
+        <spring-cloud-dependencies.version>Hoxton.SR11</spring-cloud-dependencies.version>
+    </properties>
+    <modules>
+        <module>sshm_boot_cloud_netflix_eureka</module>
+        <module>sshm_boot_cloud_netflix_hystrix</module>
+        <module>sshm_boot_cloud_netflix_ribbon</module>
+        <module>sshm_boot_cloud_netflix_feign_eureka</module>
+    </modules>
+</project>

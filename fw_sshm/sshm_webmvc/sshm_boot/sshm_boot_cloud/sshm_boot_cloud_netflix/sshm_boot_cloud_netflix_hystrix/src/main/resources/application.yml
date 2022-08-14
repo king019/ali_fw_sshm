@@ -1,0 +1,21 @@
+server:
+  port: 8803
+spring:
+  application:
+    name: hellow-service
+  cloud:
+    circuit:
+      breaker:
+        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://regcenter:8701/eureka
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10

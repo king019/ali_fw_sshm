@@ -1,0 +1,17 @@
+server:
+  port: 8880
+swagger:
+  enabled: true
+  title: title
+  description: description
+  version: version
+  license: license
+  licenseUrl: licenseUrl
+  termsOfServiceUrl: https://termsOfServiceUrl
+  contact:
+    name: contactcname
+    url: contacturl
+    email: contactemail
+  base-package: com.k
+  base-path: /**
+  exclude-path: /error, /ops/**

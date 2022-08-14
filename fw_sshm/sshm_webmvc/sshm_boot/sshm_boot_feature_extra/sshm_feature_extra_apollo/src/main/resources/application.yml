@@ -1,0 +1,6 @@
+server:
+  port: 8891
+apollo:
+  meta: http://apollo:6121
+  bootstrap:
+    enabled: true

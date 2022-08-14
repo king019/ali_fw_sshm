@@ -1,0 +1,28 @@
+spring:
+  main:
+    allow-circular-references: true
+  aop:
+    auto: false
+    proxy-target-class: true
+  application:
+    name: sshm_boot_cloud_alibaba_dubbo_consumer
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+server:
+  port: 8882
+dubbo:
+  config:
+    multiple: true
+  registries:
+    #    zookeeper:
+    #      id: zookeeper
+    #      timeout: 5000
+    #      address: zookeeper://zookeeper:2181
+    nacos:
+      id: nacos
+      timeout: 5000
+      address: nacos://nacos:8848
+      default: true
+      subscribe: true

@@ -1,0 +1,39 @@
+server:
+  port: 8883
+spring:
+  application:
+    name: feign-consumer
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+  sentinel:
+    enabled: true
+    transport:
+      #port: 8900
+      dashboard: sentinel:9930
+  #      feign:
+  #        client:
+  #          config:
+  #            feignName:
+  boot:
+    admin:
+      client:
+        url: http://smp:8980
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout : 5001
+#        readTimeout : 6001
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+feign:
+  #  okhttp:
+  httpclient:
+    enabled: true
+  hystrix:
+    enabled: true

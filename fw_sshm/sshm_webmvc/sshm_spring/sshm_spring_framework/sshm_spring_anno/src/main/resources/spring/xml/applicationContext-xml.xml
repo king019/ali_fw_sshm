@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd" default-autowire="byType">
+    <bean name="aopXmlDemo" class="AopXmlDemo"></bean>
+    <bean name="aopPointTest" class="AopPointTest"></bean>
+    <bean name="beanDemo" class="BeanDemo">
+        <property name="beanDemoChild" ref="beanDemoChild1"></property>
+    </bean>
+    <bean name="beanDemoChild1" class="BeanDemoChild1"></bean>
+    <bean name="beanDemoChild2" class="BeanDemoChild2"></bean>
+    <aop:config>
+        <aop:aspect id="ap" ref="aopXmlDemo">
+            <aop:before method="befer" pointcut="execution(* com.k.web.spring.point.xml.*.*(..))"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

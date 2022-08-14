@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sshm_boot</artifactId>
+        <groupId>com.k.sshm</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sshm_boot_feature</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>sshm_feature_order</module>
+        <module>sshm_feature_factory</module>
+        <module>sshm_feature_starter</module>
+        <module>sshm_feature_import_selector</module>
+        <module>sshm_feature_actuator</module>
+        <module>sshm_feature_load_order</module>
+        <module>sshm_feature_config</module>
+        <module>sshm_feature_mvc</module>
+        <module>sshm_feature_configuration</module>
+        <module>sshm_feature_boot</module>
+        <module>sshm_feature_reference</module>
+        <module>sshm_feature_processor</module>
+        <module>sshm_feature_anno</module>
+        <module>sshm_feature_init</module>
+        <module>sshm_feature_lazy</module>
+        <module>sshm_feature_data</module>
+        <module>sshm_feature_profile</module>
+    </modules>
+
+</project>

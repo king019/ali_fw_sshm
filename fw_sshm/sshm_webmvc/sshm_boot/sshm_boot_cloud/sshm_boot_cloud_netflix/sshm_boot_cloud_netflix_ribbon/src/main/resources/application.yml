@@ -1,0 +1,34 @@
+server:
+  port: 8804
+spring:
+  application:
+    name: ribbon-service
+eureka:
+  instance:
+    metadataMap:
+      region: region1
+      zone: zone4
+  client:
+    #    region : region2
+    #    serviceUrl:
+    #      defaultZone: http://${register.center.host}:${register.center.port}/eureka
+    #      region2: http://${register.center.host}:${register.center.port}/eureka
+
+    region: region1
+    availabilityZones:
+      region1: zone1,zone2
+    serviceUrl:
+      zone1: http://${register.center.host}:${register.center.port}/eureka
+      zone2: http://${register.center.host}:${register.center.port}/eureka
+
+
+#ZoneAwareNIWSDiscoveryLoadBalancer:
+#  enabled : true
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  MaxAutoRetries: 7
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true
+  retryableStatusCodes: 500

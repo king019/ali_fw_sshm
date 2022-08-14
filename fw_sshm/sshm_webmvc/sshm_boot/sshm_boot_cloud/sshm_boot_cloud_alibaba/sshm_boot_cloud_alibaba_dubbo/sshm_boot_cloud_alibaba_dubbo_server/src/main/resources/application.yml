@@ -1,0 +1,54 @@
+spring:
+  main:
+    allow-circular-references: true
+  aop:
+    auto: false
+    proxy-target-class: true
+  application:
+    name: sshm_boot_cloud_alibaba_dubbo_server
+  cloud:
+    nacos:
+      discovery:
+        enabled: false
+        serverAddr: nacos:8848
+        ip: dubbo
+server:
+  port: ${random.int[10000,19999]}
+dubbo:
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+      server: netty
+      #      serialization: java
+      threadpool:
+        threads: 10
+  #    hessian:
+  #      name: hessian
+  #      port: 30880
+  #      server: jetty
+  config:
+    multiple: true
+  registries:
+    #    zookeeper:
+    #        id: zookeeper
+    #        timeout: 5000
+    #        address: zookeeper://zookeeper:2181
+    #        default: true
+    nacos:
+      id: nacos
+      timeout: 5000
+      address: nacos://nacos:8848
+
+
+#  protocol:
+#    port: 20880
+#    name: dubbo
+#  #    host: dubbo
+#dubbo:
+#  application:
+#    name: dubbo_consumer
+#  registry:
+#    #address: redis://smp:6379
+#    address: zookeeper://zookeeper:2181
+#    #address: multicast://smp:1234

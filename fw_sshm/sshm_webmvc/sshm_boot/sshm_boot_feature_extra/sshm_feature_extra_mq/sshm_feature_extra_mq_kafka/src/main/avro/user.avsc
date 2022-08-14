@@ -1,0 +1,18 @@
+{
+	"namespace": "com.k.spring.mq.kafka.model",
+	"type": "record",
+	"name": "UserRecord",
+	"fields": [{
+			"name": "name",
+			"type": ["string", "null"]
+		},
+		{
+			"name": "favorite_number",
+			"type": ["int", "null"]
+		},
+		{
+			"name": "favorite_color",
+			"type": ["string", "null"]
+		}
+	]
+}

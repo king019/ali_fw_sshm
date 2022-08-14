@@ -1,0 +1,21 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: feign-server
+eureka:
+  instance:
+    metadataMap:
+      zone: zone1
+  client:
+    #    region : region2
+    #    serviceUrl:
+    #      defaultZone: http://${register.center.host}:${register.center.port}/eureka
+    #      region2: http://${register.center.host}:${register.center.port}/eureka
+
+    region: region1
+    availabilityZones:
+      region1: zone1
+    serviceUrl:
+      zone1: http://${register.center.host}:${register.center.port}/eureka
+      #zone2: http://${register.center.host}:${register.center.port}/eureka

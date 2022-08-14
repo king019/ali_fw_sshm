@@ -1,0 +1,26 @@
+kind: pipeline
+name: fw_sshm
+
+steps:
+  - name: compile
+    image: registry.cn-beijing.aliyuncs.com/king019/docker:build
+    privileged: true
+    #    detach: true
+    commands:
+      - cd fw_sshm
+      - source /etc/profile
+      - java -version
+      - mvn -version
+      - mvn compile -DskipTests=true
+#  - name: install
+#    image: registry.cn-beijing.aliyuncs.com/king019/docker:build
+#    privileged: true
+##    detach: true
+#    volumes:
+#      - name: maven
+#        path: /root/.m2
+#    commands:
+#      - cd fw_sshm
+#      - java -version
+#      - mvn -version
+#      - mvn install -DskipTests=true

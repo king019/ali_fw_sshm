@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 配置Hibernate支持 -->
+    <bean id="dataSource1" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver">
+        </property>
+        <property name="jdbcUrl" value="${mysql.test1.url}"></property>
+        <!-- <property name="jdbcUrl" value="jdbc:mysql://192.168.35.70:3306/test"></property> -->
+        <property name="user" value="${mysql.test1.username}"></property>
+        <property name="password" value="${mysql.test1.password}"></property>
+    </bean>
+    <bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver">
+        </property>
+        <property name="jdbcUrl" value="${mysql.test2.url}"></property>
+        <!-- <property name="jdbcUrl" value="jdbc:mysql://192.168.35.70:3306/test"></property> -->
+        <property name="user" value="${mysql.test2.username}"></property>
+        <property name="password" value="${mysql.test2.password}"></property>
+    </bean>
+    <bean id="dataSource3" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver">
+        </property>
+        <property name="jdbcUrl" value="${mysql.test3.url}"></property>
+        <!-- <property name="jdbcUrl" value="jdbc:mysql://192.168.35.70:3306/test"></property> -->
+        <property name="user" value="${mysql.test3.username}"></property>
+        <property name="password" value="${mysql.test3.password}"></property>
+    </bean>
+    <bean id="sqlSessionFactory1" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:/mapper/springMVC-mapper.xml"></property>
+        <property name="dataSource">
+            <ref bean="dataSource1"/>
+        </property>
+    </bean>
+    <bean id="sqlSessionFactory2" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:/mapper/springMVC-mapper.xml"></property>
+        <property name="dataSource">
+            <ref bean="dataSource2"/>
+        </property>
+    </bean>
+    <bean id="sqlSessionFactory3" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:/mapper/springMVC-mapper.xml"></property>
+        <property name="dataSource">
+            <ref bean="dataSource3"/>
+        </property>
+    </bean>
+</beans>

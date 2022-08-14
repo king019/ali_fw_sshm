@@ -1,0 +1,4 @@
+boot:
+  start:
+    test:
+      order: 1

@@ -1,0 +1,21 @@
+#NacosDiscoveryProperties
+server:
+  port: 8903
+spring:
+  application:
+    name: sentinel_nacos
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+  sentinel:
+    enabled: true
+    transport:
+      #port: 8900
+      dashboard: sentinel:9930
+app:
+  id: sentinel_nacos
+apollo:
+  meta: http://apollo:6121
+  bootstrap:
+    enabled: true

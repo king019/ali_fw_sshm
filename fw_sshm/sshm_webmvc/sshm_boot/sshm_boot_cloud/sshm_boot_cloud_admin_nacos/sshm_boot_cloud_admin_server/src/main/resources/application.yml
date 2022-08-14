@@ -1,0 +1,13 @@
+#NacosDiscoveryProperties
+server:
+  port: 8980
+spring:
+  application:
+    name: admin-server
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+#      config:
+#        serverAddr: nacos:8848
+#        name: admin-server2
